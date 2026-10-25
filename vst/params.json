@@ -1,0 +1,503 @@
+{
+ "name": "Free EQ8",
+ "params": [
+  {
+   "key": "b1_on",
+   "name": "Band 1 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b1_type",
+   "name": "Band 1 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 3,
+   "refresh_display": true
+  },
+  {
+   "key": "b1_freq",
+   "name": "Band 1 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.058697,
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_gain",
+   "name": "Band 1 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_q",
+   "name": "Band 1 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_slope",
+   "name": "Band 1 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b2_on",
+   "name": "Band 2 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b2_type",
+   "name": "Band 2 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 1,
+   "refresh_display": true
+  },
+  {
+   "key": "b2_freq",
+   "name": "Band 2 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.23299,
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_gain",
+   "name": "Band 2 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_q",
+   "name": "Band 2 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_slope",
+   "name": "Band 2 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b3_on",
+   "name": "Band 3 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b3_type",
+   "name": "Band 3 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "b3_freq",
+   "name": "Band 3 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.365637,
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_gain",
+   "name": "Band 3 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_q",
+   "name": "Band 3 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_slope",
+   "name": "Band 3 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b4_on",
+   "name": "Band 4 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b4_type",
+   "name": "Band 4 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "b4_freq",
+   "name": "Band 4 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.46598,
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_gain",
+   "name": "Band 4 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_q",
+   "name": "Band 4 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_slope",
+   "name": "Band 4 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b5_on",
+   "name": "Band 5 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b5_type",
+   "name": "Band 5 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "b5_freq",
+   "name": "Band 5 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.566323,
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_gain",
+   "name": "Band 5 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_q",
+   "name": "Band 5 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_slope",
+   "name": "Band 5 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b6_on",
+   "name": "Band 6 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b6_type",
+   "name": "Band 6 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "b6_freq",
+   "name": "Band 6 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.69897,
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_gain",
+   "name": "Band 6 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_q",
+   "name": "Band 6 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_slope",
+   "name": "Band 6 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b7_on",
+   "name": "Band 7 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b7_type",
+   "name": "Band 7 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 2,
+   "refresh_display": true
+  },
+  {
+   "key": "b7_freq",
+   "name": "Band 7 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.867353,
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_gain",
+   "name": "Band 7 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_q",
+   "name": "Band 7 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_slope",
+   "name": "Band 7 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b8_on",
+   "name": "Band 8 On",
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b8_type",
+   "name": "Band 8 Type",
+   "options": [
+    "BELL",
+    "LOW SHELF",
+    "HIGH SHELF",
+    "LOW CUT",
+    "HIGH CUT",
+    "BAND PASS"
+   ],
+   "default": 4,
+   "refresh_display": true
+  },
+  {
+   "key": "b8_freq",
+   "name": "Band 8 Freq",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.984748,
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_gain",
+   "name": "Band 8 Gain",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_q",
+   "name": "Band 8 Q",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.35764,
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_slope",
+   "name": "Band 8 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "out",
+   "name": "Output",
+   "min": -24.0,
+   "max": 24.0,
+   "default": 0.0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "scale",
+   "name": "Scale",
+   "min": 0.0,
+   "max": 200.0,
+   "default": 100.0,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "listen",
+   "name": "Listen",
+   "options": [
+    "OFF",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "default": 0
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+/* Free EQ8: larger baked text than the default (titles, option buttons, popup lists) so it reads on the Force at arm's length. */
+:root {
+  --title-size: 28px;
+  --label-size: 22px;
+  --seg-size: 20px;
+  --button-size: 22px;
+  --radius: 8px;
+}
+.frame-title { letter-spacing: 0.10em; }
+.seg-tx { font-weight: 700; letter-spacing: 0.04em; }

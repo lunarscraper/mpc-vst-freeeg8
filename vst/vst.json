@@ -1,0 +1,33 @@
+{
+  "name": "Free EQ8",
+  "vendor": "lunarscraper",
+  "uid": "FEq8",
+  "version": 1000,
+  "targets": [
+    "armv7",
+    "aarch64"
+  ],
+  "so": "freeeq8.so",
+  "effect": true,
+  "params": "params.json",
+  "layout": "layout.conf",
+  "presets": "presets.json",
+  "build": {
+    "root": "..",
+    "sources": [
+      "src/eq8.c"
+    ],
+    "cflags": [
+      "-Isrc",
+      "-O2"
+    ],
+    "cflags_arm": [
+      "-mcpu=cortex-a17",
+      "-mfpu=neon-vfpv4"
+    ],
+    "libs": [
+      "-lm"
+    ]
+  },
+  "art": "html"
+}
