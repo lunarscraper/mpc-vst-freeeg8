@@ -1,0 +1,34 @@
+# Build Free EQ8 into a DRAFT release (freeeq8-vst-v<version>) with mpc-vst-plugins' shared workflow:
+# Actions -> "VST release (draft)" -> Run workflow. Then install that draft's zip on the Force,
+# test it, and publish the draft (see mpc-vst-plugins docs/RELEASING.md).
+# dry_run builds the zips and skin previews as run artifacts only.
+name: VST release (draft)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version, e.g. 1.0.0
+        required: true
+        default: 1.0.0
+      dry_run:
+        description: Build only (zips + skin previews as run artifacts), no draft release
+        type: boolean
+        default: false
+
+jobs:
+  freeeq8:
+    uses: sd88me/mpc-vst-plugins/.github/workflows/vst-release.yml@59d9c25f4f8c09cc15b05892d5a765b1a280dc43
+    permissions:
+      contents: write
+    with:
+      tag: freeeq8-vst-v${{ inputs.version }}
+      version: ${{ inputs.version }}
+      tools_ref: 59d9c25f4f8c09cc15b05892d5a765b1a280dc43
+      vst_dir: vst
+      build: bash vst/build.sh
+      host_test: '"$MPC_VST/tools/test_port.sh" vst/vst.json'
+      plugin_id: free-eq8
+      license: GPL-3.0-or-later
+      about: An 8-band parametric EQ insert effect with large readouts and Q-Link control (filters from FreeEQ8).
+      dry_run: ${{ inputs.dry_run }}
